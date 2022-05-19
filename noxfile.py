@@ -82,6 +82,14 @@ def mypy(session: Session) -> None:
     install_with_constraints(session, "mypy", "--verbose")
     session.run("mypy", *args)
 
+@nox.session(python="3.8")
+def docs(session: Session) -> None:
+    """Build the documentation."""
+    session.run("poetry", "install", "--no-dev", external=True)
+    install_with_constraints(session, "sphinx", "sphinx-autodoc-typehints")
+    session.run("sphinx-build", "docs", "docs/_build")
+
+
 
 class CustomNamedTemporaryFile:
     """Alternative Temp file to allow compatibility with windows.

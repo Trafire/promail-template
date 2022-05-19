@@ -1,0 +1,6 @@
+/.nox/
+/.mypy_cache/
+/.pytest_cache/
+/.coverage
+/poetry.lock
+/docs/_build/
