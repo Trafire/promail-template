@@ -1,2 +1,4 @@
 mjml
 Jinja2
+jsonschema
+genson

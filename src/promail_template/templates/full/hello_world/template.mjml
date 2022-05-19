@@ -1,0 +1,12 @@
+<mjml>
+    <mj-body>
+        <mj-section>
+            <mj-column background-color="black">
+                <mj-text font-size="20px" color="white" font-family="helvetica">Hello {{name}} !</mj-text>
+                <mj-divider border-color="white"></mj-divider>
+                <mj-image src="https://thumbs.gfycat.com/LavishCleverAzurevase-size_restricted.gif">Hello World
+                </mj-image>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>
