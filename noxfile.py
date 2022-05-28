@@ -90,6 +90,11 @@ def docs(session: Session) -> None:
     session.run("sphinx-build", "docs", "docs/_build")
 
 
+@nox.session(python=["3.8"])
+def poetry_update(session: Session) -> None:
+    """Update Lock File."""
+    session.run("poetry", "update", external=True)
+
 
 class CustomNamedTemporaryFile:
     """Alternative Temp file to allow compatibility with windows.
