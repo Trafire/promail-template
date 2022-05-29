@@ -88,6 +88,11 @@ def test_schema_generation():
     HelloWorld.generate_schema({"name": "World"})
 
 
+def test_plaintext():
+    """Test Plaintext."""
+    HelloWorld().plaintext
+
+
 @pytest.mark.e2e
 def test_preview_html():
     """Test html preview."""

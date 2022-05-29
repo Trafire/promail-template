@@ -7,6 +7,8 @@ import webbrowser
 from io import StringIO
 from typing import AnyStr, Optional
 
+import html2text  # type: ignore
+
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from jsonschema import validate  # type: ignore
@@ -134,6 +136,11 @@ class PromailTemplate(abc.ABC):
             self._html = render_html["html"]
             self._errors = render_html["errors"]
         return self._html
+
+    @property
+    def plaintext(self):
+        """Get Plaintext version."""
+        return html2text.html2text(self.html)
 
     def save_preview_html(self, path: str):  # pragma: no cover
         """Saves a copy of html code at specified path."""
