@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "promail-template"
-version = "0.1.0"
+version = "0.2.0"
 description = "Promail Template Libary"
 authors = ["Antoine Wood <antoinewood@gmail.com>"]
 
