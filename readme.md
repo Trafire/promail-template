@@ -3,3 +3,15 @@
 [![PyPI](https://img.shields.io/pypi/v/promail-template.svg)](https://pypi.org/project/promail/)
 
 # Promail-Template
+
+## Basic Usage
+
+```python
+from promail_template.templates.full import HelloWorld
+
+template = HelloWorld()
+template.preview_html()
+template.print("html")
+
+
+```
