@@ -1,0 +1,26 @@
+{
+  "style":
+  {
+    "header_background": "#F8AFA6",
+    "odd_row_colour": "#f2f1ef",
+    "even_row_colour": "#FADCD9"
+  },
+  "title": "Birds of the World",
+  "rows": [
+    {
+      "thumbnail": "https://cdn.pixabay.com/photo/2017/01/28/11/00/white-tailed-eagle-2015098_960_720.jpg",
+      "title": "White Tail Eagle",
+      "description": "The white-tailed eagle (Haliaeetus albicilla) is a very large species of sea eagle widely distributed across temperate Eurasia."
+    },
+    {
+      "thumbnail": "https://cdn.pixabay.com/photo/2017/02/07/16/47/kingfisher-2046453_960_720.jpg",
+      "title": "Kingfisher",
+      "description": "Kingfishers or Alcedinidae are a family of small to medium-sized, brightly colored birds in the order Coraciiformes."
+    },
+    {
+      "thumbnail": "https://cdn.pixabay.com/photo/2014/05/11/13/39/bird-341898_960_720.jpg",
+      "title": "Bald Eagle",
+      "description": "The bald eagle (Haliaeetus leucocephalus) is a bird of prey found in North America. A sea eagle, it has two known subspecies and forms a species pair with the white-tailed eagle (Haliaeetus albicilla), which occupies the same niche as the bald eagle in the Palearctic."
+    }
+  ]
+}

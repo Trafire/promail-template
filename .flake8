@@ -5,3 +5,4 @@ max-line-length = 88
 select = B,B9,BLK,C,D,DAR,E,F,I,S,W
 docstring-convention = google
 max-complexity = 10
+per-file-ignores = __init__.py:F401

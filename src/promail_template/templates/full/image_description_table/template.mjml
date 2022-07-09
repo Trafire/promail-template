@@ -1,0 +1,49 @@
+<mjml>
+    <mj-head>
+        <mj-attributes>
+
+            <mj-class name="header" background-color="{{style.header_background}}"/>
+            <mj-class name="title" margin="0" padding-bottom="10" align="center" font-size="36px"/>
+
+            <mj-class name="thumbnail-image" margin="0" padding="0" align="center" width="200px"/>
+            <mj-class name="row-title" margin="0" padding-bottom="10" align="center" font-size="24px"/>
+            <mj-class name="row-description" margin="0" padding="0" align="left" font-size="14px"/>
+
+            <mj-class name="row-odd" background-color="{{style.odd_row_colour}}"/>
+            <mj-class name="row-even" background-color="{{style.even_row_colour}}"/>
+
+            <mj-class name="image_column" width="35%"/>
+            <mj-class name="text_column" width="65%"/>
+
+            <mj-all font-family="helvetica"/>
+        </mj-attributes>
+    </mj-head>
+
+    <mj-body>
+
+        <mj-section mj-class="header">
+            <mj-column>
+                <mj-text mj-class="title">{{title}}</mj-text>
+            </mj-column>
+        </mj-section>
+        {% for row in rows %}
+        {% if loop.index % 2 == 0 %}
+        <mj-section mj-class="row-even">
+            {% else %}
+            <mj-section mj-class="row-odd">
+                {% endif %}
+                <mj-column mj-class="image_column">
+                    <mj-image mj-class="thumbnail-image"
+                              src="{{row.thumbnail}}"></mj-image>
+                </mj-column>
+                <mj-column mj-class="text_column">
+                    <mj-text mj-class="row-title">{{row.title}}</mj-text>
+                    <mj-text mj-class="row-description">{{row.description}}</mj-text>
+                </mj-column>
+            </mj-section>
+
+            {% endfor %}
+
+    </mj-body>
+
+</mjml>
